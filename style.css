@@ -1,0 +1,529 @@
+html {
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "Coolvetica";
+  src: url("lib/coolvetica.otf"); /* path to your TTF file */
+}
+
+body {
+  font-family: "Coolvetica";
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #8c86aa;
+  color: #fff; /* mistyrose */
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background: #a39bbb;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.2rem;
+}
+
+/* nav links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s ease;
+  margin: auto;
+}
+
+nav a:hover {
+  color: #e4e1ff;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* menu icon (hidden on large screens) */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+}
+
+main {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+main p {
+  margin-bottom: 1.5rem;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem; /* palevioletred */
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem; /* palevioletred */
+}
+p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+button {
+  background: #a39bbb; /* lightpink */
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #4c4857;
+  transform: translateY(-2px);
+}
+
+img {
+  width: 300px;
+  height: auto;
+  /*border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);*/
+  transition: transform 0.3s ease;
+}
+.han {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.han:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+section {
+  margin: 2rem 0;
+  padding: 1rem 0;
+}
+/*
+#about,
+#projects,
+#contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+} */
+
+/*partie about, renové */
+/* --- Nouveaux Styles pour la Section About (Accueil) --- */
+
+#about {
+  padding: 40px 20px; /* Ajout du padding pour l'esthétique */
+  text-align: center; /* Pour centrer le titre */
+}
+
+#about h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 2.5rem; /* Ajustement pour la cohérence avec les autres titres de section */
+}
+.about-block p {
+  margin: 5px 0; /* Marge verticale réduite (5px haut/bas), pas de marge horizontale (0) */
+  line-height: 1.4; /* Optionnel : améliore la lisibilité du texte lui-même */
+}
+
+/* Conteneur principal des blocs (la grille) */
+.about-grid {
+  display: flex;
+  flex-direction: column; /* Empilement vertical par défaut (mobile-first) */
+  align-items: center; /* Centre les blocs horizontalement */
+  gap: 30px; /* Espace entre les blocs */
+  max-width: 1000px;
+  margin: 0 auto; /* Centre le conteneur lui-même */
+}
+
+/* Style pour chaque bloc (Introduction, Parcours) */
+.about-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Réaligne le contenu à gauche dans le bloc */
+  background-color: #a39bbb; /* Couleur de fond de vos cartes */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  max-width: 90%;
+  width: 100%;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-block:hover {
+  transform: translateY(-5px); /* Effet de survol cohérent */
+}
+
+.about-block h3 {
+  color: #fff;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+/* Media Query pour les grands écrans (pour la mise en page côte à côte) */
+@media (min-width: 768px) {
+  .about-grid {
+    flex-direction: row; /* Disposition horizontale */
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .about-block {
+    flex: 1; /* Permet aux blocs de prendre une part égale de l'espace */
+    max-width: 450px; /* Limite la largeur maximale de chaque bloc */
+  }
+}
+
+footer {
+  background: #a39bbb;
+  color: #fff;
+  text-align: center;
+  padding: 1.2rem 0;
+  margin-top: 3rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* skills section + animation */
+
+.skills {
+  margin: 5px auto;
+  padding: 5px;
+}
+.skills h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+:root {
+  --items-count: 6;
+  --width: 120px;
+  --height: 100px;
+  --duration: 5s;
+}
+.slider {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: var(--height);
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, #fff 10% 90%, transparent);
+}
+.slider:hover img {
+  animation-play-state: paused !important;
+}
+
+.slider img {
+  mix-blend-mode: color-burn;
+  position: absolute;
+  width: var(--width);
+  height: var(--height);
+  object-fit: cover;
+  transition: filter 0.3s;
+  left: 100%;
+  filter: grayscale(0);
+  animation: autoRunSlider var(--duration) linear infinite;
+  animation-delay: calc(
+    (var(--pos) - 1) * (var(--duration) / var(--items-count))
+  );
+}
+@keyframes autoRunSlider {
+  from {
+    left: 100%;
+  }
+  to {
+    left: calc(var(--width) * -1);
+  }
+}
+
+/* section projets*/
+
+/* Styles de la section Projets */
+#projects {
+  padding: 40px 20px;
+  text-align: center; /* Pour centrer le titre */
+}
+
+#projects h2 {
+  color: #fff; /* Couleur pour le titre de section */
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+/* Conteneur principal des cartes (la grille) */
+.projects-grid {
+  display: flex; /* Active Flexbox */
+  flex-direction: column; /* Les projets s'empilent verticalement */
+  align-items: center; /* **C'est ce qui centre les cartes horizontalement** */
+  gap: 30px; /* Espace entre les cartes */
+  max-width: 1200px; /* Limite la largeur du conteneur */
+  margin: 0 auto; /* **Centre le conteneur `projects-grid` lui-même** */
+}
+
+/* Style pour chaque carte de projet */
+.project-item {
+  display: flex;
+  flex-direction: column; /* Disposition verticale par défaut (mobile-first) */
+  align-items: center;
+  background-color: #a39bbb;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px; /* Limite la largeur de chaque carte */
+  width: 90%; /* Prend 90% de la largeur du conteneur parent */
+  text-align: left; /* Réaligne le texte à gauche dans la carte */
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-item:hover {
+  transform: translateY(-5px); /* Petit effet de survol */
+}
+
+.project-description {
+  margin-bottom: 15px;
+}
+
+.project-description h3 {
+  color: #fff;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+.project-item img.han {
+  width: 100%; /* L'image prend toute la largeur de la carte */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* --- */
+
+/* --- */
+
+/* Media Query pour les grands écrans (tablette et desktop) */
+@media (min-width: 768px) {
+  .project-item {
+    flex-direction: row; /* Disposition horizontale */
+    justify-content: space-between;
+    align-items: flex-start; /* Alignement en haut */
+    padding: 30px;
+  }
+
+  .project-item:nth-child(even) {
+    /* Inverse l'ordre pour un design en zigzag */
+    flex-direction: row-reverse;
+  }
+
+  .project-description {
+    flex: 1; /* Prend l'espace restant */
+    padding-right: 20px;
+  }
+
+  .project-item:nth-child(even) .project-description {
+    padding-right: 0;
+    padding-left: 20px;
+  }
+
+  .project-item img.han {
+    width: 40%; /* L'image prend une partie de la carte */
+    max-width: 300px; /* Limite maximale pour l'image */
+  }
+}
+
+/* pour veille tech */
+/* --- Styles pour la Veille Technologique (avec couleurs personnalisées) --- */
+
+#veille {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#veille h2 {
+  color: #fff; /* Couleur de titre en blanc, cohérent avec votre style de projets */
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+/* Conteneur principal des articles (la grille) */
+.veille-grid {
+  display: flex;
+  flex-direction: column; /* Empilement vertical */
+  align-items: center; /* Centre les cartes horizontalement */
+  gap: 35px;
+  max-width: 1000px;
+  margin: 0 auto; /* Centre le conteneur lui-même */
+}
+
+/* Style pour chaque carte d'article */
+.article-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #a39bbb; /* Utilisation de la couleur de fond de vos cartes de projet */
+  color: #fff; /* Texte principal en blanc pour une bonne lisibilité */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ombre plus marquée pour ressortir sur le fond */
+  padding: 25px;
+  max-width: 90%;
+  width: 100%;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.article-card:hover {
+  transform: translateY(-5px); /* Effet de survol cohérent */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.article-content {
+  padding: 10px 0;
+}
+
+.article-content h3 {
+  color: #fff; /* Titre d'article en blanc */
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3); /* Bordure légère pour séparer le titre */
+  padding-bottom: 10px;
+}
+
+.article-content p {
+  font-size: 1.05rem;
+  color: #eee; /* Texte légèrement plus clair que le blanc pur */
+  margin-bottom: 15px;
+}
+
+.article-card img.article-image {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  display: inline-block;
+  color: #6a6579; /* Couleur d'action verte pour un bon contraste et une différenciation */
+  text-decoration: none;
+  font-weight: bold;
+  padding-top: 5px;
+  transition: color 0.3s;
+}
+
+.read-more:hover {
+  color: #524e5f;
+}
+
+/* --- Media Query pour les grands écrans (desktop) --- */
+@media (min-width: 768px) {
+  .article-card {
+    flex-direction: row; /* Disposition horizontale sur desktop */
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+  }
+
+  .article-card:nth-child(even) {
+    /* Inverse l'ordre pour un design en zigzag */
+    flex-direction: row-reverse;
+  }
+
+  .article-content {
+    flex: 1;
+    padding: 0 20px;
+  }
+
+  .article-card img.article-image {
+    width: 35%;
+    max-width: 280px;
+    margin-bottom: 0;
+  }
+}
+
+/* --- Media Query pour les grands écrans (desktop) --- */
+@media (min-width: 768px) {
+  .article-card {
+    flex-direction: row; /* Disposition horizontale sur desktop */
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+  }
+
+  .article-card:nth-child(even) {
+    /* Inverse l'ordre pour un design en zigzag */
+    flex-direction: row-reverse;
+  }
+
+  .article-content {
+    flex: 1;
+    padding: 0 20px;
+  }
+
+  .article-card img.article-image {
+    width: 35%; /* L'image prend 35% de la carte */
+    max-width: 280px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  :root {
+    --width: 80px; /* Nouvelle largeur pour mobile */
+    --height: 70px; /* Nouvelle hauteur pour mobile */
+  }
+}

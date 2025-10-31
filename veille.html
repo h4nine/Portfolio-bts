@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Veille</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Acceuil</a>
+        <a href="projets.html">Projets</a>
+        <a href="stage.html">Stage</a>
+        <a href="veille.html">Veille</a>
+        <a href="bilan.html">Bilan</a>
+      </div>
+    </nav>
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const navLinks = document.getElementById("nav-links");
+
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+
+    <section id="veille">
+      <div>
+        <h2>L'impact de L'IA dans l'industrie de la musique?</h2>
+        <p>la question qui se pose.</p>
+        <div class="veille-grid">
+          <div class="row article-card">
+            <img
+              class="article-image"
+              src="lib/umg_stability .png"
+              alt="Image de l'article sur AI"
+            />
+            <div class="article-content">
+              <h3>
+                Universal Music Group and Stability AI Announce Strategic
+                Alliance to Co-Develop Professional AI Music Creation Tools
+              </h3>
+              <p>
+                By : Stability AI <br />
+                Date : 30 October 2025 <br />
+                The collaboration will center artists in the development process
+                and prioritize feedback from the creative community to guide the
+                creation of fully licensed, commercially safe AI music tools.
+              </p>
+              <a
+                href="https://stability.ai/news/universal-music-group-and-stability-ai-announce-strategic-alliance"
+                class="read-more"
+                target="_blank"
+                >Lire l'article &rarr;</a
+              >
+            </div>
+          </div>
+
+          <div class="row article-card">
+            <div class="article-content">
+              <h3>
+                Good news for artists' rights: HarmonyCloak poisons AIs to
+                protect music!
+              </h3>
+              <p>
+                By: Edward Back <br />
+                Date: October 27 2024 <br />
+                Training generative artificial intelligence requires a large
+                amount of data. Quite often, researchers collect content
+                massively from the Web without obtaining the consent of the
+                authors. To be able to defend themselves, the latter are
+                increasingly turning to solutions that allow poisoning any AI
+                that attempts to use it.
+              </p>
+              <a
+                href="https://www.futura-sciences.com/tech/breves/technologie-bonne-nouvelle-droits-artistes-harmonycloak-empoisonne-ia-proteger-musique-10143"
+                class="read-more"
+                target="_blank"
+                >Lire l'article &rarr;</a
+              >
+            </div>
+            <img
+              class="article-image"
+              src="lib/ia_protection.avif"
+              alt="Image de l'article"
+            />
+          </div>
+
+          <div class="row article-card">
+            <img
+              class="article-image"
+              src="lib/umg_lawsuit.webp"
+              alt="Image de l'article"
+            />
+            <div class="article-content">
+              <h3>
+                Universal Music Group and AI Music Company Udio Reach Agreement
+                in Lawsuit
+              </h3>
+              <p>
+                UMG previously accused Udio of stealing artists’ work to train
+                AI to generate music <br />
+                - le site web de l'article est actuellement en maintenance.
+              </p>
+              <a
+                href="https://pitchfork.com/news/universal-music-group-and-ai-music-company-udio-reach-agreement-in-lawsuit"
+                class="read-more"
+                target="_blank"
+                >Lire l'article &rarr;</a
+              >
+            </div>
+          </div>
+          <div class="row article-card">
+            <div class="article-content">
+              <h3>Les outils pour la veille Techno</h3>
+              <p>
+                là j'ai utilisé google alerts avec certain mots clés pour
+                recevoir des articles récents sur l'ia et la musique, que se
+                soit en anglais ou en français.
+              </p>
+            </div>
+            <img
+              class="article-image"
+              src="lib/alerts.png"
+              alt="Image de l'alerte"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>
+        Mes Liens
+        <a href="https://github.com/h4nine">
+          <img
+            style="width: 3%; vertical-align: middle"
+            src="https://img.icons8.com/?size=100&id=16318&format=png&color=FFFFFF"
+            alt="Icône GitHub"
+          />
+        </a>
+        <a href="https://www.linkedin.com/hanine-najjar/">
+          <img
+            style="width: 2.5%; vertical-align: middle"
+            src="https://img.icons8.com/?size=100&id=8808&format=png&color=FFFFFF"
+            alt="Icône linkedin"
+          />
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>

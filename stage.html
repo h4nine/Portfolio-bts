@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio - Stage</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Acceuil</a>
+        <a href="projets.html">Projets</a>
+        <a href="stage.html">Stage</a>
+        <a href="veille.html">Veille</a>
+        <a href="bilan.html">Bilan</a>
+      </div>
+    </nav>
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const navLinks = document.getElementById("nav-links");
+
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+    <h1>Mes expériences en entreprise</h1>
+    <div>
+      <h2>Stage chez Aalia.Tech</h2>
+      <p>Durée : Avril 2025 - Juin 2025</p>
+      <p>Poste : Developpeur & Desginer</p>
+      <ul>
+        <li>mission 1</li>
+        <li>mission 2</li>
+        <li>mission 3</li>
+      </ul>
+    </div>
+    <footer>
+      <p>
+        Mes Liens
+        <a href="https://github.com/h4nine">
+          <img
+            style="width: 3%; vertical-align: middle"
+            src="https://img.icons8.com/?size=100&id=16318&format=png&color=FFFFFF"
+            alt="Icône GitHub"
+          />
+        </a>
+        <a href="https://www.linkedin.com/hanine-najjar/">
+          <img
+            style="width: 2.5%; vertical-align: middle"
+            src="https://img.icons8.com/?size=100&id=8808&format=png&color=FFFFFF"
+            alt="Icône linkedin"
+          />
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
