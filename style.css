@@ -564,4 +564,31 @@ footer a {
   }
 }
 
-/* css recuperé en ligne*/
+/*Page stage */
+/* Styles de la section Projets */
+#stage {
+  padding: 40px 20px;
+  text-align: center; /* Pour centrer le titre */
+}
+
+#stage h2 {
+  color: #fff; /* Couleur pour le titre de section */
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+#stage h3 {
+  color: #fff; /* Couleur pour le titre de section */
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* Conteneur principal des cartes (la grille) */
+.stage-grid {
+  display: flex; /* Active Flexbox */
+  flex-direction: column; /* Les projets s'empilent verticalement */
+  align-items: center; /* **C'est ce qui centre les cartes horizontalement** */
+  gap: 30px; /* Espace entre les cartes */
+  max-width: 800px; /* Limite la largeur du conteneur */
+  margin: 0 auto; /* **Centre le conteneur `projects-grid` lui-même** */
+}
+
