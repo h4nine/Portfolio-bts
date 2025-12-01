@@ -29,6 +29,42 @@ nav {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+#home {
+  display: flex;
+  flex-direction: row;
+  gap: 5%; /* espace entre les éléments en pourcentage */
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap; /* permet aux éléments de passer à la ligne si l’écran est petit */
+}
+
+.home-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* laisse l'image définir la hauteur automatiquement */
+  max-width: 100%;
+}
+
+.home-image #han {
+  width: 50vw; /* largeur responsive par rapport à la fenêtre */
+  max-width: 400px; /* ne dépasse pas 400px */
+  height: auto; /* garde les proportions */
+  border: none;
+}
+
+/* Media query pour petits écrans */
+@media screen and (max-width: 768px) {
+  #home {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .home-image #han {
+    width: 80vw; /* prend plus de place sur mobile */
+  }
+}
+
 .logo {
   font-size: 1.2rem;
 }
@@ -527,3 +563,5 @@ footer a {
     --height: 70px; /* Nouvelle hauteur pour mobile */
   }
 }
+
+/* css recuperé en ligne*/
