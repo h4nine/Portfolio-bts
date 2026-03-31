@@ -24,6 +24,8 @@
         navLinks.classList.toggle("active");
       });
     </script>
+    <div id="modal-container"></div>
+    <script src="modalComponent.html"></script>
     <section id="projects">
       <div>
         <h2>Mes Projets</h2>
@@ -31,11 +33,11 @@
         <div class="projects-grid">
           <div class="row project-item">
             <div class="project-description">
-              <h3>SmartBike</h3>
+              <h3>LidoSéréna</h3>
               <p>
-                On a crée un site web de E-commerce avec une base de donnés
-                fonctionelle. Le site vise à présenter certains produits de la
-                marque 'SmartBike'
+                On a crée un site web restauration italienne fonctionelle qui
+                agit sur une base de donnés avec une api . Le site vise à
+                présenter les plats de la marque 'Lidoséréna'
               </p>
               <p>
                 <img
@@ -43,7 +45,7 @@
                   src="https://img.icons8.com/?size=100&id=31047&format=png&color=000000"
                   alt="icon"
                 />
-                : Developpeur Front-End / Designer
+                : Developpeur Front-End
               </p>
               <p>
                 <img
@@ -51,7 +53,67 @@
                   src="https://img.icons8.com/?size=100&id=22118&format=png&color=000000"
                   alt="icon"
                 />
-                : 5 personnes
+                : 4 personnes
+              </p>
+              <p>
+                <img
+                  style="width: 8%; vertical-align: middle"
+                  src="https://img.icons8.com/000000/2x/clock"
+                  alt="icon"
+                />
+                : 3 Mois
+              </p>
+              <p>
+                <img
+                  style="width: 12%; vertical-align: middle"
+                  src="https://img.icons8.com/?size=100&id=9nmz9TYzN8iO&format=png&color=000000"
+                  alt="icon"
+                />
+                <img
+                  style="width: 12%; vertical-align: middle"
+                  src="https://img.icons8.com/?size=100&id=38273&format=png&color=000000"
+                  alt="icon"
+                />
+                <img
+                  style="width: 12%; vertical-align: middle"
+                  src="https://img.icons8.com/?size=100&id=39853&format=png&color=000000"
+                  alt="icon"
+                />
+                <img
+                  style="width: 12%; vertical-align: middle"
+                  src="https://img.icons8.com/?size=100&id=9XiVE3JbDXmD&format=png&color=000000"
+                  alt="icon"
+                />
+              </p>
+              <a
+                href="https://github.com/Mael-EPSI/LidoSerena_Project"
+                target="_blank"
+                class="read-more"
+                >Voir Rendu &rarr;</a
+              >
+            </div>
+            <img
+              class="han"
+              src="lib/lidoserena.png"
+              alt="lidoserena project"
+            />
+          </div>
+
+          <div class="row project-item">
+            <div class="project-description">
+              <h3>DataViz</h3>
+              <p>
+                Projet de visualisation des donnés pour répondre à la
+                probmématique : Quelle est la place des animés dans le monde du
+                cinéma / série ?
+              </p>
+              <p>
+                <img
+                  style="width: 8%; vertical-align: middle"
+                  src="https://img.icons8.com/?size=100&id=31047&format=png&color=000000"
+                  alt="icon"
+                />
+                : Developpeur
               </p>
               <p>
                 <img
@@ -77,58 +139,6 @@
                   src="https://img.icons8.com/?size=100&id=39853&format=png&color=000000"
                   alt="icon"
                 />
-                <img
-                  style="width: 12%; vertical-align: middle"
-                  src="https://img.icons8.com/?size=100&id=9XiVE3JbDXmD&format=png&color=000000"
-                  alt="icon"
-                />
-              </p>
-              <a href="lib/smartbike.pdf" target="_blank" class="read-more"
-                >Voir Rendu &rarr;</a
-              >
-            </div>
-            <img class="han" src="lib/smartbike.png" alt="SmartBike project" />
-          </div>
-
-          <div class="row project-item">
-            <div class="project-description">
-              <h3>Emotion Logger</h3>
-              <p>
-                C'est un projet personnel que j'ai crée, qui sert à documenter
-                les émotions de certaines personnes.
-              </p>
-              <p>
-                <img
-                  style="width: 8%; vertical-align: middle"
-                  src="https://img.icons8.com/?size=100&id=31047&format=png&color=000000"
-                  alt="icon"
-                />
-                : Developpeur / Designer
-              </p>
-              <p>
-                <img
-                  style="width: 8%; vertical-align: middle"
-                  src="https://img.icons8.com/000000/2x/clock"
-                  alt="icon"
-                />
-                : 2 Jours
-              </p>
-              <p>
-                <img
-                  style="width: 12%; vertical-align: middle"
-                  src="https://img.icons8.com/?size=100&id=9nmz9TYzN8iO&format=png&color=000000"
-                  alt="icon"
-                />
-                <img
-                  style="width: 12%; vertical-align: middle"
-                  src="https://img.icons8.com/?size=100&id=38273&format=png&color=000000"
-                  alt="icon"
-                />
-                <img
-                  style="width: 12%; vertical-align: middle"
-                  src="https://img.icons8.com/?size=100&id=39853&format=png&color=000000"
-                  alt="icon"
-                />
               </p>
               <a
                 href="https://h4nine.github.io/emotion-logger/"
@@ -137,11 +147,7 @@
                 >Le Résultat &rarr;</a
               >
             </div>
-            <img
-              class="han"
-              src="lib/emotion-logger.png"
-              alt="EpsiTech project"
-            />
+            <img class="han" src="lib/emotion.png" alt="dataviz" />
           </div>
 
           <div class="row project-item">
@@ -195,6 +201,243 @@
               alt="Demineur project"
             />
           </div>
+
+          <div class="row project-item">
+            <div class="project-description">
+              <h3>Projet Python D&D</h3>
+              <p>
+                jeu python qui simule une partie de D&D, avec des personnages,
+                des classes, des sorts, des monstres et un système de combat. Le
+                projet a été inspiré par des personnages d'animés et leurs
+                pouvoirs (MHA, BSD et JJK)
+              </p>
+              <p>
+                <img
+                  style="width: 8%; vertical-align: middle"
+                  src="https://img.icons8.com/?size=100&id=31047&format=png&color=000000"
+                  alt="icon"
+                />
+                : Developpeur
+              </p>
+              <p>
+                <img
+                  style="width: 8%; vertical-align: middle"
+                  src="https://img.icons8.com/?size=100&id=22118&format=png&color=000000"
+                  alt="icon"
+                />
+                : 4 personnes
+              </p>
+              <p>
+                <img
+                  style="width: 8%; vertical-align: middle"
+                  src="https://img.icons8.com/000000/2x/clock"
+                  alt="icon"
+                />
+                : 1 Mois
+              </p>
+              <p>
+                <img
+                  style="width: 12%; vertical-align: middle"
+                  src="https://img.icons8.com/?size=100&id=9nmz9TYzN8iO&format=png&color=000000"
+                  alt="icon"
+                />
+              </p>
+              <a
+                href="https://github.com/h4nine/Projet-Python-DD/"
+                target="_blank"
+                class="read-more"
+                >Documentation &rarr;</a
+              >
+            </div>
+            <img class="han" src="lib/emotion.png" alt="dataviz" />
+          </div>
+
+          <div class="row project-item">
+            <div class="project-description">
+              <h3>API Pour BDD</h3>
+              <p>
+                Durant mon stage, on m'a demandé de créer une Base de donnés et
+                l'api qui va avec pour l'application de l'entreprise - afin de
+                faciliter le traitement / la gestion des donnés.
+              </p>
+              <p>
+                <img
+                  style="width: 8%; vertical-align: middle"
+                  src="https://img.icons8.com/?size=100&id=31047&format=png&color=000000"
+                  alt="icon"
+                />
+                : Developpeur Back-End
+              </p>
+              <p>
+                <img
+                  style="width: 8%; vertical-align: middle"
+                  src="https://img.icons8.com/?size=100&id=22118&format=png&color=000000"
+                  alt="icon"
+                />
+                : 4 personnes
+              </p>
+              <p>
+                <img
+                  style="width: 8%; vertical-align: middle"
+                  src="https://img.icons8.com/000000/2x/clock"
+                  alt="icon"
+                />
+                : 1 Mois
+              </p>
+              <p>
+                <img
+                  style="width: 12%; vertical-align: middle"
+                  src="https://img.icons8.com/?size=100&id=2572&format=png&color=000000"
+                  alt="icon"
+                />
+              </p>
+              <div id="modal" class="modal">
+                <div class="modal-content">
+                  <span class="close-button" onclick="toggleModal()"
+                    >&times;</span
+                  >
+                  <h3>API Pour BDD</h3>
+                  <p>
+                    A FastAPI-based translation management system with:
+                    Multi-language support User management Translation sessions
+                    Validation workflow Session stats Installation 1. Install
+                    Dependencies pip install -r requirements.txt 2. Run the API
+                    source venv/bin/activate # if using a virtual environment
+                    python3 main.py The API runs at: http://localhost:8000 API
+                    Documentation Replace localhost with the ip address of the
+                    virtual machine !! Interactive documentation available at:
+                    http://localhost:8000/docs API Endpoints Users (/users)
+                    Method Endpoint Description POST /users/ Create new user GET
+                    /users/{user_id} Get user by ID GET /users/ List all users
+                    PUT /users/{user_id} Update user DELETE /users/{user_id}
+                    Delete user (soft) Languages (/languages) Method Endpoint
+                    Description POST /languages/ Create new language GET
+                    /languages/{code_language} Get language by code GET
+                    /languages/ List all languages PUT
+                    /languages/{code_language} Update language Medical Sentences
+                    (/medical_sentences) Method Endpoint Description POST
+                    /medical_sentences/ Create new sentence GET
+                    /medical_sentences/{sentence_id} Get sentence by ID GET
+                    /medical_sentences/ List sentences (with filters) PUT
+                    /medical_sentences/{sentence_id} Update sentence POST
+                    /medical_sentences/{sentence_id}/validate Validate sentence
+                    Query Filters skip, limit — Pagination code_language —
+                    Filter by language creator_id — Filter by creator
+                    validated_only — Show only validated sentences Translations
+                    (/translations) Method Endpoint Description POST
+                    /translations/ Create new translation GET
+                    /translations/{translation_id} Get translation by ID GET
+                    /translations/ List translations (with filters) PUT
+                    /translations/{translation_id} Update translation POST
+                    /translations/{translation_id}/validate Validate translation
+                    Query Filters skip, limit — Pagination sentence_id — Filter
+                    by sentence session_id — Filter by session translator_id —
+                    Filter by translator validated_only — Show only validated
+                    translations Sessions (/sessions) Method Endpoint
+                    Description POST /sessions/ Create new session GET
+                    /sessions/{session_id} Get session by ID GET /sessions/ List
+                    sessions (with filters) PUT /sessions/{session_id} Update
+                    session POST /sessions/{session_id}/end End session GET
+                    /sessions/{session_id}/statistics Get session stats POST
+                    /sessions/{session_id}/update-progress Update progress Query
+                    Filters skip, limit — Pagination creator_id — Filter by
+                    creator status — Filter by status (started, finished, quit)
+                    active_only — Show only active sessions Example Usage Get
+                    all languages curl http://localhost:8000/languages/ Get
+                    specific language curl http://localhost:8000/languages/ar
+                    List medical sentences (paginated) curl
+                    "http://localhost:8000/medical_sentences/?skip=0&limit=10&validated_only=true"
+                    Get session statistics curl
+                    http://localhost:8000/sessions/ses_123/statistics Validate
+                    translation with score curl -X POST
+                    "http://localhost:8000/translations/tra_123/validate?score=95.5"
+                    Project Structure db-validator/ ├── main.py # FastAPI
+                    application entry point ├── endpoints.py # API route
+                    definitions ├── models.py # Pydantic models and types ├──
+                    schemas.py # Request/response schemas ├── services.py #
+                    Business logic layer ├── repositories.py # Database access
+                    layer ├── router.py # adds all routers into one file ├──
+                    mongodb.py # MongoDB connection ├── languages.json #
+                    Dictionary of language code and language name. - needs to be
+                    adapted to the `ar-AR` format ├── import_langs.py # Python
+                    Script to mass add language data into the database ├──
+                    docker-compose.yml # Docker compose to build the image ├──
+                    Dockerfile # Docker compose to build the image ├── core/ #
+                    folder that includes all of the settings └──
+                    requirements.txt Database Collections users — User accounts
+                    and roles languages — Supported languages medical_sentences
+                    — Source medical sentences translations — Translated
+                    sentences sessions — Translation sessions c'est tout :)
+                  </p>
+                  <a class="read-more" onclick="toggleModal()">Done &rarr;</a>
+                </div>
+              </div>
+
+              <script>
+                // Get the modal element
+                const modal = document.getElementById("modal");
+
+                // Function to toggle the modal visibility
+                function toggleModal() {
+                  modal.classList.toggle("show-modal");
+                }
+
+                // Close the modal when clicking outside of it
+                window.addEventListener("click", (event) => {
+                  if (event.target === modal) {
+                    toggleModal();
+                  }
+                });
+              </script>
+
+              <style>
+                /* Modal styles */
+                .modal {
+                  display: none;
+                  position: fixed;
+                  z-index: 1;
+                  left: 0;
+                  top: 0;
+                  width: 100%;
+                  height: 100%;
+                  overflow: auto;
+                  background-color: rgba(0, 0, 0, 0.4);
+                }
+
+                .show-modal {
+                  display: block;
+                }
+
+                .modal-content {
+                  background-color: #fefefe;
+                  margin: 15% auto;
+                  padding: 20px;
+                  border: 1px solid #888;
+                  width: 80%;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                }
+
+                .close-button {
+                  color: #aaa;
+                  float: right;
+                  font-size: 28px;
+                  font-weight: bold;
+                  cursor: pointer;
+                }
+
+                .close-button:hover,
+                .close-button:focus {
+                  color: black;
+                  text-decoration: none;
+                }
+              </style>
+
+              <a class="read-more" onclick="toggleModal()"
+                >Voir Documentation &rarr;</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -211,7 +454,7 @@
         <a href="https://www.linkedin.com/hanine-najjar/">
           <img
             style="width: 2.5%; vertical-align: middle"
-            src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000"
+            src="https://img.icons8.com/?size=100&id=8808&format=png&color=0000000"
             alt="Icône linkedin"
           />
         </a>
