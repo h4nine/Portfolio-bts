@@ -3,10 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - han</title>
+    <title>Portfolio - Bilan</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="welcome.css" />
-    <link rel="icon" type="image/png" href="lib/yoi.png" />
   </head>
   <body>
     <nav>
@@ -18,31 +16,99 @@
         <a href="bilan.html">Bilan</a>
       </div>
     </nav>
+
     <script>
       const menuToggle = document.getElementById("menu-toggle");
       const navLinks = document.getElementById("nav-links");
 
-      menuToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
+      if (menuToggle) {
+        menuToggle.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+        });
+      }
     </script>
 
-    <main>
-      <h1>Bilan - Pas encore fait !</h1>
-    </main>
+    <section id="projects">
+      <div class="container">
+        <h2>Deux années de développement Full-Stack</h2>
+        <p style="text-align: center; margin-bottom: 3rem; color: var(--color-text-secondary);">
+          De la conception d'interfaces avec Vue.js à la gestion de backends complexes, j'ai bâti un profil capable d'intervenir sur toute la chaîne de production.
+        </p>
+
+        <div class="projects-grid">
+          
+          <!-- Bloc : Ce que j'ai retenu -->
+          <div class="row project-item">
+            <div class="project-description">
+              <h3>Ce que j'ai retenu</h3>
+              <p>Mes principes pour un développement robuste et évolutif : Maîtrise de bout en bout, Agilité et Adaptabilité technique.</p>
+              <ul style="color:var(--color-text-secondary); font-size:0.9rem; list-style: none; padding: 0;">
+                <li>• Architectures MVC et API Rest</li>
+                <li>• Conteneurisation (Docker) et Versionnement (Git)</li>
+                <li>• Apprentissage rapide de nouveaux frameworks</li>
+              </ul>
+              <a href="projets.html" class="read-more">Voir les réalisations &rarr;</a>
+            </div>
+            <div class="project-description" style="background: rgba(255,255,255,0.05); border-radius: 15px; padding: 20px;">
+                <h4 style="margin-top:0">Points Clés</h4>
+                <p>Ma polyvalence me permet de jongler entre projets mobiles (Flutter) et solutions web (Symfony, PHP, JS).</p>
+            </div>
+          </div>
+
+          <!-- Bloc : Compétences consolidées -->
+          <div class="row project-item">
+            <div class="project-description">
+              <h3>Compétences consolidées</h3>
+              <p>Une palette technique complète extraite de mes projets réels au cours de mon BTS SIO SLAM.</p>
+              
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 15px;">
+                <div>
+                  <strong>Front-End</strong>
+                  <p style="font-size: 0.85rem; color: var(--color-text-secondary);">Vue.js, Flutter, Dart, HTML/CSS/JS</p>
+                </div>
+                <div>
+                  <strong>Back-End</strong>
+                  <p style="font-size: 0.85rem; color: var(--color-text-secondary);">PHP, Symfony, Python, SQL, C#</p>
+                </div>
+              </div>
+            </div>
+            <div class="project-description" style="background: rgba(255,255,255,0.05); border-radius: 15px; padding: 20px;">
+                <h4>Outils & Design</h4>
+                <p style="font-size: 0.85rem; color: var(--color-text-secondary);">Docker, Git, Photoshop, Canva, VS Code, Android Studio.</p>
+            </div>
+          </div>
+
+          <!-- Bloc : Prochaines étapes -->
+          <div class="row project-item">
+            <div class="project-description">
+              <h3>Prochaines étapes</h3>
+              <p>Objectifs 2026 : Validation du diplôme et montée en compétences sur de nouvelles technologies innovantes.</p>
+              <p><strong>Apprentissage de React.js prévu cet été</strong> pour compléter mon expertise Front-End.</p>
+              <a href="lib/Tableau_Synthese_Hanine_Najjar.pdf" target="_blank" class="read-more">Tableau de synthèse (E5) &rarr;</a>
+            </div>
+            <div class="project-description" style="background: rgba(255,255,255,0.05); border-radius: 15px; padding: 20px;">
+                <h4>Ambition</h4>
+                <p>Évoluer vers des projets de grande envergure nécessitant une maîtrise totale de la pile technique.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <footer>
       <p>
         Mes Liens
         <a href="https://github.com/h4nine">
           <img
-            style="width: 3%; vertical-align: middle"
+            style="width: 30px; vertical-align: middle"
             src="https://img.icons8.com/?size=100&id=16318&format=png&color=000000"
             alt="Icône GitHub"
           />
         </a>
         <a href="https://www.linkedin.com/hanine-najjar/">
           <img
-            style="width: 2.5%; vertical-align: middle"
+            style="width: 25px; vertical-align: middle"
             src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000"
             alt="Icône linkedin"
           />
